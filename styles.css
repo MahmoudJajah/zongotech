@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F9F8F4;
+    min-height: 100vh;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+hr {
+    margin: 20px 80px 0 80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    margin: 0 80px 0 80px;
+    margin-top: 15px;
+}
+
+.brand-title a {
+    text-decoration: none;
+    color: #111111;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: rgb(40, 163, 240);
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    color: #111111;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+span {
+    color: gray;
+}
+
+.main {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+    color: rgb(40, 163, 240);
+    margin: 0 80px 0 80px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #111111;
+}
+
+.socials {
+    text-align: center;
+    font-size: 50px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.email {
+    text-align: center;
+    color: #111111;
+    font-size: 20px;
+}
+.footer {
+    text-align: center;
+}
+
+.facebook, .twitter, .linkedin, .instagram {
+    padding: 10px;
+}
